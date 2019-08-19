@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 
 class Article extends Component {
-  constructor(props) {
-    super(props);
+  state = {
+    isOpen: true
+  };
 
-    this.state = {
-      isOpen: true
-    }
-  }
 
   handleClick = () => {
     this.setState({ isOpen: !this.state.isOpen });
@@ -15,16 +12,22 @@ class Article extends Component {
 
 
   render() {
-    const articleText = this.state.isOpen && this.props.text;
+    const { article } = this.props;
+    const style = { width: '50%' }
+    const articleText = this.state.isOpen && <section className='card-text'>{ article.text }</section>;
     const buttonText = this.state.isOpen ? 'Hide Text' : 'Show Text';
     return (
-      <div>
-        <h2>
-          { this.props.title }
-          <button onClick={ this.handleClick }>{ buttonText }</button>
-        </h2>
-        <p>{ articleText }</p>
-        <p>creation date:{ (new Date(this.props.date)).toDateString() }</p>
+      <div className='card mx-auto' style={ style }>
+        <div className='card-header'>
+          <h2>
+            { article.title }
+            <button onClick={ this.handleClick } className='btn btn-primary btn-lg float-right'>{ buttonText }</button>
+          </h2>
+        </div>
+        <div className='card-body'>
+          { articleText }
+          <h6 className='card-subtitle text-muted'>creation date:{ (new Date(article.date)).toDateString() }</h6>
+        </div>
       </div>
     )
   }

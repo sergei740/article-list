@@ -4,10 +4,13 @@ import articles from '../fixtures';
 
 
 function ArticleList() {
+  const articlesList = articles.map((article) => {
+    return <li key={ article.id }><Article article={ article }/></li>
+  });
   return (
-    articles.map((article)=>{
-      return <Article key={article.id} title={article.title} text={article.text} date={article.date}/>
-    })
+    <ul className='list-unstyled'>
+      { articlesList }
+    </ul>
   )
 }
 
