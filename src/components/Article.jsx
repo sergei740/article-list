@@ -1,19 +1,31 @@
 import React, { Component } from 'react';
 
 class Article extends Component {
-  state = {
-    isOpen: true
-  };
+  constructor(props) {
+    super(props);
 
+    this.state = {
+      isOpen: props.defaultOpen
+    }
+  }
 
   handleClick = () => {
     this.setState({ isOpen: !this.state.isOpen });
   };
 
+  shouldComponentUpdate(nextProps, nextState) {
+    return this.state.isOpen !== nextState.isOpen;
+  };
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.defaultOpen !== this.state.defaultOpen) {
+      this.setState({ isOpen: nextProps.defaultOpen })
+    }
+  };
 
   render() {
     const { article } = this.props;
-    const style = { width: '50%' }
+    const style = { width: '60%' };
     const articleText = this.state.isOpen && <section className='card-text'>{ article.text }</section>;
     const buttonText = this.state.isOpen ? 'Hide Text' : 'Show Text';
     return (

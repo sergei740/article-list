@@ -1,11 +1,11 @@
 import React from 'react';
 import Article from './Article';
-import articles from '../fixtures';
 
 
-function ArticleList() {
-  const articlesList = articles.map((article) => {
-    return <li key={ article.id }><Article article={ article }/></li>
+
+function ArticleList({articles}) {
+  const articlesList = articles.map((article,index) => {
+    return <li key={ article.id }><Article article={ article } defaultOpen = {index === 0}/></li>
   });
   return (
     <ul className='list-unstyled'>
