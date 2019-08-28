@@ -25,7 +25,7 @@ class Article extends Component {
 
   render() {
     const { article } = this.props;
-    const style = { width: '60%' };
+    const style = { width: '100%' };
     const articleText = this.state.isOpen && <section className='card-text'>{ article.text }</section>;
     const buttonText = this.state.isOpen ? 'Hide Text' : 'Show Text';
     return (
@@ -38,7 +38,7 @@ class Article extends Component {
         </div>
         <div className='card-body'>
           { articleText }
-          <h6 className='card-subtitle text-muted'>creation date:{ (new Date(article.date)).toDateString() }</h6>
+          <h6 className='card-subtitle text-muted py-3'>creation date:{ (new Date(article.date)).toDateString() }</h6>
         </div>
       </div>
     )
