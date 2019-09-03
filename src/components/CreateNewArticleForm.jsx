@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import getRandomString from '../getRandomId';
 
-class CreateNewArticle extends Component {
+class CreateNewArticleForm extends Component {
   constructor(props) {
     super(props);
 
@@ -57,4 +57,4 @@ class CreateNewArticle extends Component {
   }
 }
 
-export default CreateNewArticle;
+export default CreateNewArticleForm;
