@@ -31,7 +31,7 @@ class Article extends Component {
     return (
       <div className='card mx-auto' style={ style }>
         <div className='card-header'>
-          <h2>
+          <h2 className='display-4'>
             { article.title }
             <button onClick={ this.handleClick } className='btn btn-primary btn-lg float-right'>{ buttonText }</button>
           </h2>
