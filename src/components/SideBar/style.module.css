@@ -1,0 +1,18 @@
+a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+}
+
+.side_bar {
+    width: 15%;
+    height: 300px;
+    padding: 10px;
+    background: cornflowerblue;
+    border-radius: 5px;
+}
+
+.side_bar_link {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 20px;
+    color: honeydew;
+}

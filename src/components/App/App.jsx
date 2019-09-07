@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import style from './style.module.css';
 import { BrowserRouter, Route } from "react-router-dom";
-import articles from '../fixtures';
+import articles from '../../fixtures';
 import 'bootstrap/dist/css/bootstrap.css';
-import Articles from "./Articles";
-import SideBar from "./SideBar";
-import Header from "./Header";
-import Movies from "./Movies";
+import Articles from "../Articles/Articles";
+import SideBar from "../SideBar/SideBar";
+import Header from "../Header/Header";
+import MovieList from "../MovieList/MovieList";
 
 
 class App extends Component {
@@ -54,9 +55,9 @@ class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <div className='container m-auto'>
+        <div className={ style.main_container }>
           <Header headerText={ this.state.headerText }/>
-          <div className='row m-0'>
+          <div className={ style.main_content_container }>
             <SideBar onClickNavLink={ this.updateHeaderText }/>
             <Route path='/articles' render={ () => <Articles handleChange={ this.handleChange }
                                                              handleSubmit={ this.handleSubmit }
@@ -66,7 +67,7 @@ class App extends Component {
                                                              openCreateNewArticle={ this.openCreateNewArticle }
                                                              revert={ this.revert }
                                                              openFilter={ this.openFilter }/> }/>
-            <Route path='/movies' component={ Movies }/>
+            <Route path='/movies' component={ MovieList }/>
           </div>
         </div>
       </BrowserRouter>

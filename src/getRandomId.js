@@ -1,4 +1,4 @@
-const getRandomString = length => {
+const getRandomId = length => {
   let result = '';
   let symbols = 'abcdefghijklmnopqrstuvwxyz0123456789';
   const symbolsLength = symbols.length;
@@ -10,4 +10,4 @@ const getRandomString = length => {
   return result;
 };
 
-export default getRandomString;
+export default getRandomId;

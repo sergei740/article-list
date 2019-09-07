@@ -1,14 +1,15 @@
 import React from 'react';
+import style from './style.module.css';
 import { NavLink } from "react-router-dom";
 
 function SideBar(props) {
   return (
-    <div className='col-sm-2 p-2 text-center jumbotron font-weight-bold'>
+    <div className={ style.side_bar }>
       <NavLink to='/articles' onClick={ props.onClickNavLink }>
-        <div className='font-weight-normal'>Articles</div>
+        <div className={ style.side_bar_link }>ARTICLES</div>
       </NavLink>
       <NavLink to='/movies' onClick={ props.onClickNavLink }>
-        <div className='font-weight-normal'>Movies</div>
+        <div className={ style.side_bar_link }>MOVIES</div>
       </NavLink>
     </div>
   )

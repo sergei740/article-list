@@ -1,19 +1,20 @@
 import React from 'react';
-import ArticleList from './ArticleList';
-import ArticleFilter from './ArticleFilter';
-import CreateNewArticle from './CreateNewArticleForm';
+import ArticleList from '../ArticleList';
+import ArticleFilter from '../ArticleFilter';
+import CreateNewArticle from '../CreateNewArticleForm';
+import style from './style.module.css';
 
 function Articles(props) {
   const textForNewArticleButton = props.isOpenCreateNewArticle ? 'Hide' : 'New article';
   const textForFilterButton = props.isFilterOpen ? 'Hide' : 'Show';
   return (
-    <div className='col-lg-10 pr-0'>
-      <div className='d-flex justify-content-center mb-4 pt-4 pb-4 bg-light rounded'>
-        <button className='btn btn-primary btn-lg'
+    <div className={ style.articles_list }>
+      <div className={ style.block_buttons }>
+        <button className='btn btn-outline-primary btn-lg'
                 onClick={ props.openCreateNewArticle }>{ textForNewArticleButton }</button>
-        <button className='btn btn-primary ml-3 btn-lg'
+        <button className='btn btn-outline-primary btn-lg'
                 onClick={ props.openFilter }>{ `${ textForFilterButton } Filter` }</button>
-        <button className='btn btn-secondary ml-3 btn-lg' onClick={ props.revert }>Revert Articles</button>
+        <button className='btn btn-outline-secondary btn-lg' onClick={ props.revert }>Revert Articles</button>
       </div>
       { props.isOpenCreateNewArticle ? <CreateNewArticle handleSubmit={ props.handleSubmit }/> : null }
       { props.isFilterOpen ? <ArticleFilter handleChange={ props.handleChange }/> : null }
