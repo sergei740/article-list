@@ -29,7 +29,7 @@ class Article extends Component {
     const articleText = this.state.isOpen && <section className='card-text'>{ article.text }</section>;
     const buttonText = this.state.isOpen ? 'Hide Text' : 'Show Text';
     return (
-      <div className='card mx-auto' style={ style }>
+      <div className='card mx-auto mb-4' style={ style }>
         <div className='card-header'>
           <h2 className='display-4'>
             { article.title }

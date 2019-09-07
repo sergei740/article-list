@@ -15,13 +15,23 @@ class App extends Component {
     articles,
     isOpenCreateNewArticle: false,
     isFilterOpen: false,
-    headerText: document.location.pathname.slice(1).charAt(0).toUpperCase() + document.location.pathname.slice(2)
+    headerText: document.location.pathname.slice(1).charAt(0).toUpperCase() + document.location.pathname.slice(2),
+    secondStyle: true
   };
+
 
   updateHeaderText = () => {
     setTimeout(() => {
-      this.setState({ headerText: document.location.pathname.slice(1).charAt(0).toUpperCase() + document.location.pathname.slice(2) });
+      this.setState({
+        headerText: document.location.pathname !== '/'
+          ? document.location.pathname.slice(1).charAt(0).toUpperCase() + document.location.pathname.slice(2)
+          : 'Articles'
+      });
     });
+  };
+
+  componentDidMount() {
+    this.updateHeaderText();
   };
 
   revert = () => {
@@ -52,21 +62,28 @@ class App extends Component {
     this.setState({ isFilterOpen: !this.state.isFilterOpen, isOpenCreateNewArticle: false });
   };
 
+  changeStyle = () => {
+    this.setState({ secondStyle: !this.state.secondStyle });
+  };
+
+
   render() {
     return (
       <BrowserRouter>
         <div className={ style.main_container }>
-          <Header headerText={ this.state.headerText }/>
+          <Header headerText={ this.state.headerText } changeStyle={ this.changeStyle }
+                  secondStyle={ this.state.secondStyle }/>
           <div className={ style.main_content_container }>
-            <SideBar onClickNavLink={ this.updateHeaderText }/>
-            <Route path='/articles' render={ () => <Articles handleChange={ this.handleChange }
-                                                             handleSubmit={ this.handleSubmit }
-                                                             articles={ this.state.reverted ? this.state.articles.slice().reverse() : this.state.articles }
-                                                             isOpenCreateNewArticle={ this.state.isOpenCreateNewArticle }
-                                                             isFilterOpen={ this.state.isFilterOpen }
-                                                             openCreateNewArticle={ this.openCreateNewArticle }
-                                                             revert={ this.revert }
-                                                             openFilter={ this.openFilter }/> }/>
+            <SideBar onClickNavLink={ this.updateHeaderText } secondStyle={ this.state.secondStyle }/>
+            <Route exact path='/' render={ () => <Articles handleChange={ this.handleChange }
+                                                           handleSubmit={ this.handleSubmit }
+                                                           articles={ this.state.reverted ? this.state.articles.slice().reverse() : this.state.articles }
+                                                           isOpenCreateNewArticle={ this.state.isOpenCreateNewArticle }
+                                                           isFilterOpen={ this.state.isFilterOpen }
+                                                           openCreateNewArticle={ this.openCreateNewArticle }
+                                                           revert={ this.revert }
+                                                           openFilter={ this.openFilter }/> }/>
+
             <Route path='/movies' component={ MovieList }/>
           </div>
         </div>

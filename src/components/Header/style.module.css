@@ -1,7 +1,25 @@
 .block_header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
     background: cornflowerblue;
     border-radius: 5px;
     margin-bottom: 30px;
     padding: 50px;
     color: honeydew;
+}
+
+.block_header_second {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background: cornflowerblue;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    padding: 50px;
+    background: #33393F;
+    color: #A75F94;
+
 }

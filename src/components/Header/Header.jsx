@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import style from './style.module.css';
 
-class Header extends Component {
-  constructor(props) {
-    super(props);
-  }
+function Header(props) {
 
-  render() {
-    return (
-      <div className={ style.block_header }>
-        <h1 className='display-4 text-left'>
-          { this.props.headerText }
-        </h1>
+  return (
+    <div className={ props.secondStyle ? style.block_header : style.block_header_second }>
+      <h1 className='display-4 text-left'>
+        { props.headerText }
+      </h1>
+      <div>
+        <button onClick={ props.changeStyle } className='btn btn-warning'>Change Theme</button>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default Header;

@@ -4,12 +4,12 @@ import { NavLink } from "react-router-dom";
 
 function SideBar(props) {
   return (
-    <div className={ style.side_bar }>
-      <NavLink to='/articles' onClick={ props.onClickNavLink }>
-        <div className={ style.side_bar_link }>ARTICLES</div>
+    <div className={ props.secondStyle ? style.side_bar : style.side_bar_second }>
+      <NavLink to='/' onClick={ props.onClickNavLink }>
+        <div className={ props.secondStyle ? style.side_bar_link : style.side_bar_link_second }>ARTICLES</div>
       </NavLink>
       <NavLink to='/movies' onClick={ props.onClickNavLink }>
-        <div className={ style.side_bar_link }>MOVIES</div>
+        <div className={ props.secondStyle ? style.side_bar_link : style.side_bar_link_second }>MOVIES</div>
       </NavLink>
     </div>
   )
