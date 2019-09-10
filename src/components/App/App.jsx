@@ -7,6 +7,7 @@ import Articles from "../Articles/Articles";
 import SideBar from "../SideBar/SideBar";
 import Header from "../Header/Header";
 import MovieList from "../MovieList/MovieList";
+import Game from '../Game/Game';
 
 
 class App extends Component {
@@ -85,6 +86,7 @@ class App extends Component {
                                                            openFilter={ this.openFilter }/> }/>
 
             <Route path='/movies' component={ MovieList }/>
+            <Route path='/game' component={ Game }/>
           </div>
         </div>
       </BrowserRouter>

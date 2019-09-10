@@ -11,6 +11,9 @@ function SideBar(props) {
       <NavLink to='/movies' onClick={ props.onClickNavLink }>
         <div className={ props.secondStyle ? style.side_bar_link : style.side_bar_link_second }>MOVIES</div>
       </NavLink>
+      <NavLink to='/game' onClick={ props.onClickNavLink }>
+        <div className={ props.secondStyle ? style.side_bar_link : style.side_bar_link_second }>GAME</div>
+      </NavLink>
     </div>
   )
 }

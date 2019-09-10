@@ -1,0 +1,10 @@
+.game {
+    width: 450px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background: #33393F;
+    border-radius: 5px;
+    height: 450px;
+    position: relative;
+}

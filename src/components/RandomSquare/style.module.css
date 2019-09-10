@@ -1,0 +1,7 @@
+.randomSquare {
+    height: 30px;
+    width: 30px;
+    background: #A75F94;
+    border-radius: 5px;
+    position: absolute;
+}
