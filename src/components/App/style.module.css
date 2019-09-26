@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 html {
-    overflow-y:scroll;
+    overflow-y: scroll;
 }
 
 .main_container {
     display: flex;
     flex-direction: column;
+    max-width: 100%;
+    padding: 0 20px;
     width: 1100px;
     margin: auto;
     font-family: 'Lato', sans-serif;

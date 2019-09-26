@@ -1,10 +1,50 @@
+.game_wrapper {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.game_info {
+    width: 200px;
+    height: 380px;
+    border: 1px solid cornflowerblue;
+    border-radius: 5px;
+    font-size: 36px;
+    text-align: center;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.game_info_children {
+    margin: 20px 0 30px 0;
+}
+
 .game {
     width: 450px;
-    margin: auto;
     display: flex;
+    margin: auto;
     flex-direction: column;
     background: #33393F;
     border-radius: 5px;
     height: 450px;
     position: relative;
+}
+
+
+.restart_button {
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    height: 50px;
+    border: 1px solid #007bff;
+    border-radius: 100%;
+    margin: 10px auto 0;
+    background-color: transparent;
+    color: #007bff;
+    outline: none;
+}
+
+.restart_button:hover {
+    color: white;
+    background: #007bff;
 }
