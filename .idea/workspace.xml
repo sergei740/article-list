@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b7976d-1aac-4d0c-9186-eed4194e807b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArticleList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Article/Article.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Article.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ArticleList/ArticleList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleList/ArticleList.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -158,8 +153,16 @@
       <workItem from="1570227749817" duration="675000" />
       <workItem from="1570540716204" duration="217000" />
       <workItem from="1570541248270" duration="3133000" />
-      <workItem from="1570549376678" duration="1556000" />
+      <workItem from="1570549376678" duration="9896000" />
     </task>
+    <task id="LOCAL-00001" summary="updated yarn.lock">
+      <created>1570551055303</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570551055303</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TodoView">
@@ -186,5 +189,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated yarn.lock" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated yarn.lock" />
   </component>
 </project>

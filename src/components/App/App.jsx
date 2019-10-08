@@ -72,7 +72,6 @@ class App extends Component {
 
   changeStyle = () => {
     this.setState({ secondStyle: !this.state.secondStyle });
-    console.log(document.location.pathname);
   };
 
   render() {
@@ -80,9 +79,9 @@ class App extends Component {
       <HashRouter basename={ process.env.PUBLIC_URL }>
         <div className={ style.main_container }>
           <Header headerText={ this.state.headerText } changeStyle={ this.changeStyle }
-                  secondStyle={ this.state.secondStyle }/>
+                  secondStyle={ this.state.secondStyle } />
           <div className={ style.main_content_container }>
-            <SideBar onClickNavLink={ this.updateHeaderText } secondStyle={ this.state.secondStyle }/>
+            <SideBar onClickNavLink={ this.updateHeaderText }  secondStyle={ this.state.secondStyle }/>
             <Route exact path='/'
                    render={ () => <Articles handleChange={ this.handleChange }
                                             handleSubmit={ this.handleSubmit }
