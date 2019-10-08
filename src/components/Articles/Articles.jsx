@@ -1,7 +1,7 @@
 import React from 'react';
-import ArticleList from '../ArticleList';
-import ArticleFilter from '../ArticleFilter';
-import CreateNewArticle from '../CreateNewArticleForm';
+import ArticleList from '../ArticleList/ArticleList';
+import ArticleFilter from '../ArticleFilter/ArticleFilter';
+import CreateNewArticle from '../CreateNewArticle/CreateNewArticleForm';
 import style from './style.module.css';
 
 function Articles(props) {

@@ -40,16 +40,10 @@ class MovieList extends Component {
 
     return (
       <div className={ style.movie_list }>
-        <div className={ style.block_input_title }>
-          <div>
-            <input placeholder='Type Movie Title' value={ this.state.inputTitle } onChange={ this.handleChange }/>
-          </div>
-          <div>
-            <button className='btn btn-outline-info btn-sm' onClick={ this.loadMovies }
-                    disabled={ !this.state.inputTitle }>Show Movies
-            </button>
-          </div>
-        </div>
+        <form className={ style.block_input_title } onSubmit={ this.loadMovies }>
+          <input placeholder='Type Movie Title' value={ this.state.inputTitle } onChange={ this.handleChange }/>
+          <button className='btn btn-outline-info btn-sm' disabled={ !this.state.inputTitle }>Show Movies</button>
+        </form>
         <div className={ style.block_poster_list }>
           { posterList }
         </div>

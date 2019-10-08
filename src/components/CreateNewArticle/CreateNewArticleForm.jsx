@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import getRandomString from '../getRandomId';
+import getRandomString from '../../getRandomId';
 
 class CreateNewArticleForm extends Component {
   constructor(props) {
