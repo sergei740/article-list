@@ -4,19 +4,12 @@
     <list default="true" id="52b7976d-1aac-4d0c-9186-eed4194e807b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Article.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Article.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArticleFilter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleFilter/ArticleFilter.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ArticleList.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArticleList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleList/ArticleList.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Articles/Articles.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Articles/Articles.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreateNewArticleForm.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateNewArticle/CreateNewArticleForm.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MovieList/MovieList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieList/MovieList.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -164,7 +157,8 @@
       <workItem from="1569961435892" duration="1276000" />
       <workItem from="1570227749817" duration="675000" />
       <workItem from="1570540716204" duration="217000" />
-      <workItem from="1570541248270" duration="1261000" />
+      <workItem from="1570541248270" duration="3133000" />
+      <workItem from="1570549376678" duration="1556000" />
     </task>
     <servers />
   </component>
@@ -185,7 +179,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
