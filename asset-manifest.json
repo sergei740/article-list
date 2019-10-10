@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/article-list/static/css/main.e408907c.chunk.css",
-    "main.js": "/article-list/static/js/main.ae868268.chunk.js",
-    "main.js.map": "/article-list/static/js/main.ae868268.chunk.js.map",
-    "runtime~main.js": "/article-list/static/js/runtime~main.8930df98.js",
-    "runtime~main.js.map": "/article-list/static/js/runtime~main.8930df98.js.map",
-    "static/css/2.22a7d4ef.chunk.css": "/article-list/static/css/2.22a7d4ef.chunk.css",
-    "static/js/2.137ed12c.chunk.js": "/article-list/static/js/2.137ed12c.chunk.js",
-    "static/js/2.137ed12c.chunk.js.map": "/article-list/static/js/2.137ed12c.chunk.js.map",
+    "main.css": "/article-list/static/css/main.fbd5ff91.chunk.css",
+    "main.js": "/article-list/static/js/main.e204c885.chunk.js",
+    "main.js.map": "/article-list/static/js/main.e204c885.chunk.js.map",
+    "runtime~main.js": "/article-list/static/js/runtime~main.d37e0afe.js",
+    "runtime~main.js.map": "/article-list/static/js/runtime~main.d37e0afe.js.map",
+    "static/css/2.510409cd.chunk.css": "/article-list/static/css/2.510409cd.chunk.css",
+    "static/js/2.934437b2.chunk.js": "/article-list/static/js/2.934437b2.chunk.js",
+    "static/js/2.934437b2.chunk.js.map": "/article-list/static/js/2.934437b2.chunk.js.map",
     "index.html": "/article-list/index.html",
-    "precache-manifest.c410a12e835292b23949844039311227.js": "/article-list/precache-manifest.c410a12e835292b23949844039311227.js",
+    "precache-manifest.4a8ce15b101aeccaf6c6ebb38fa80cb0.js": "/article-list/precache-manifest.4a8ce15b101aeccaf6c6ebb38fa80cb0.js",
     "service-worker.js": "/article-list/service-worker.js",
-    "static/css/2.22a7d4ef.chunk.css.map": "/article-list/static/css/2.22a7d4ef.chunk.css.map",
-    "static/css/main.e408907c.chunk.css.map": "/article-list/static/css/main.e408907c.chunk.css.map"
+    "static/css/2.510409cd.chunk.css.map": "/article-list/static/css/2.510409cd.chunk.css.map",
+    "static/css/main.fbd5ff91.chunk.css.map": "/article-list/static/css/main.fbd5ff91.chunk.css.map"
   }
 }
