@@ -4,7 +4,8 @@ import style from './style.module.css';
 import PlayerSquare from '../PlayerSquare/PayerSuare';
 import RandomSquare from '../RandomSquare/RandomSquare';
 import getRandomNumb from '../../getRandomNumb';
-import PopupForGame from '../PopupForGame/PopupForGame';
+import PopupForGameScore from '../PopupForGameScore/PopupForGameScore';
+import PopupStartGame from '../PopupStartGame/PopupStartGame';
 
 class Game extends Component {
   constructor(props) {
@@ -19,15 +20,24 @@ class Game extends Component {
         marginTop: getRandomNumb(),
         marginLeft: getRandomNumb()
       },
-      showPopup: false
+      showPopupForGameScore: false,
+      showPopupStartGame: false
     };
     this.interval2 = null;
     this.interval3 = null;
   }
 
-  togglePopup = () => {
+  componentDidMount() {
+    this.togglePopupStartGame();
+  }
+
+  togglePopupStartGame = () => {
+    this.setState({ showPopupStartGame: !this.state.showPopupStartGame })
+  };
+
+  togglePopupForGameScore = () => {
     this.setState({
-      showPopup: !this.state.showPopup
+      showPopupForGameScore: !this.state.showPopupForGameScore
     });
   };
 
@@ -43,12 +53,10 @@ class Game extends Component {
   timer = () => {
     if (this.state.time !== 0) {
       this.setState({ time: this.state.time - 1 })
-    } else{
+    } else {
       clearInterval(this.interval3);
-      this.togglePopup();
+
     }
-    // const newTime = this.state.time !== 0 ? this.setState({ time: this.state.time - 1 }) : this.state.time;
-    // return newTime;
   };
 
   startTimer = (isAlreadySetted = false) => {
@@ -81,13 +89,13 @@ class Game extends Component {
   stopGame = () => {
     clearInterval(this.interval2);
     clearInterval(this.interval3);
+    this.togglePopupForGameScore();
   };
 
   restartGame = () => {
-    this.stopGame();
-    this.myRef.current.focus();
-    this.setState({ time: 60, points: 0 });
-    this.startTimer();
+    clearInterval(this.interval2);
+    clearInterval(this.interval3);
+    this.startGame();
   };
 
   startGame = () => {
@@ -133,7 +141,15 @@ class Game extends Component {
   render() {
     return (
       <div className={ style.game_wrapper }>
-        { this.state.showPopup ? <PopupForGame score={ this.state.points } closePopup={ this.togglePopup }/> : null }
+        { this.state.showPopupStartGame
+          ? <PopupStartGame startGameBtn={ () => {
+            this.startGame();
+            this.togglePopupStartGame()
+          } } closePopup={ this.togglePopupStartGame }/>
+          : null }
+        { this.state.showPopupForGameScore
+          ? <PopupForGameScore score={ this.state.points } closePopup={ this.togglePopupForGameScore }/>
+          : null }
         <div className={ style.game_info }>
           <div className={ style.game_info_children }>{ `TIME:${ this.state.time }` }</div>
           <div className={ style.game_info_children }>{ `POINTS: ${ this.state.points }` }</div>
@@ -144,7 +160,7 @@ class Game extends Component {
           <button className='btn btn-sm btn-outline-danger'
                   onClick={ () => {
                     this.stopGame();
-                    this.togglePopup()
+                    this.togglePopupForGameScore()
                   } }
                   disabled={ this.state.time === 0 }>STOP GAME
           </button>

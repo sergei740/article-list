@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="52b7976d-1aac-4d0c-9186-eed4194e807b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/App/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Article/Article.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Article/Article.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ArticleList/ArticleList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ArticleList/ArticleList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Game/Game.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/Game.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupForGame/PopupForGame.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupForGameScore/PopupForGameScore.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopupForGame/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupForGameScore/style.module.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,11 +48,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev\react\article-list\src\components\PopupStartGame" />
       <recent name="D:\Dev\react\article-list\src\components\CreateNewArticle" />
       <recent name="D:\Dev\react\article-list\src\components\ArticleList" />
       <recent name="D:\Dev\react\article-list\src\components\ArticleFilter" />
       <recent name="D:\Dev\react\article-list\src\components\Article" />
-      <recent name="D:\Dev\react\article-list\src\components\Articles" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -153,7 +153,8 @@
       <workItem from="1570227749817" duration="675000" />
       <workItem from="1570540716204" duration="217000" />
       <workItem from="1570541248270" duration="3133000" />
-      <workItem from="1570549376678" duration="9896000" />
+      <workItem from="1570549376678" duration="10024000" />
+      <workItem from="1570715296620" duration="8795000" />
     </task>
     <task id="LOCAL-00001" summary="updated yarn.lock">
       <created>1570551055303</created>
@@ -162,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570551055303</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added style.module.css and key prop to AricleList">
+      <created>1570566645544</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570566645544</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -192,6 +200,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated yarn.lock" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated yarn.lock" />
+    <MESSAGE value="added style.module.css and key prop to AricleList" />
+    <option name="LAST_COMMIT_MESSAGE" value="added style.module.css and key prop to AricleList" />
   </component>
 </project>
