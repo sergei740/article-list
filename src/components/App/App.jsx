@@ -15,26 +15,20 @@ class App extends Component {
     articles,
     isOpenCreateNewArticle: false,
     isFilterOpen: false,
-    headerText: document.location.pathname.slice(1).charAt(0).toUpperCase() + document.location.pathname.slice(2),
+    headerText: '',
     secondStyle: true
   };
 
   updateHeaderText = () => {
-    //// For Deploy
-    // setTimeout(() => {
-    //   this.setState({
-    //     headerText: document.location.hash !== '#/' && document.location.hash !== '#/article-list/'
-    //       ? document.location.hash.slice(15).charAt(0).toUpperCase() + document.location.hash.slice(16)
-    //       : 'Articles'
-    //   })
-    // });
-    //// For Development
-    setTimeout(()=>{
-      this.setState({
-        headerText: document.location.hash !== '#/'
-          ? document.location.hash.slice(2).charAt(0).toUpperCase() + document.location.hash.slice(3)
-          : 'Articles'
-      });
+    setTimeout(() => {
+      const path = window.location.href;
+      if (path.includes('movies')) {
+        this.setState({ headerText: 'Movies' });
+      } else if (path.includes('game')) {
+        this.setState({ headerText: 'Game' });
+      } else {
+        this.setState({ headerText: 'Articles' });
+      }
     });
   };
 
@@ -78,10 +72,11 @@ class App extends Component {
     return (
       <HashRouter basename={ process.env.PUBLIC_URL }>
         <div className={ style.main_container }>
-          <Header headerText={ this.state.headerText } changeStyle={ this.changeStyle }
-                  secondStyle={ this.state.secondStyle } />
+          <Header headerText={ this.state.headerText }
+                  changeStyle={ this.changeStyle }
+                  secondStyle={ this.state.secondStyle }/>
           <div className={ style.main_content_container }>
-            <SideBar onClickNavLink={ this.updateHeaderText }  secondStyle={ this.state.secondStyle }/>
+            <SideBar onClickNavLink={ this.updateHeaderText } secondStyle={ this.state.secondStyle }/>
             <Route exact path='/'
                    render={ () => <Articles handleChange={ this.handleChange }
                                             handleSubmit={ this.handleSubmit }
