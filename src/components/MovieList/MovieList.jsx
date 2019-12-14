@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import MovieCard from "../MovieCard/MovieCard";
 import { loadData } from '../../services/httpService';
-import getTransformStr from '../../getTransformStr';
 import style from './style.module.css';
-
 
 class MovieList extends Component {
   state = {
@@ -15,8 +13,9 @@ class MovieList extends Component {
     this.setState({ inputTitle: e.target.value });
   };
 
-  loadMovies = () => {
-    loadData(getTransformStr(this.state.inputTitle))
+  loadMovies = (e) => {
+    e.preventDefault();
+    loadData(this.state.inputTitle.trim())
       .then(({ response }) => {
         this.setState({
           movies: JSON.parse(response).Search,

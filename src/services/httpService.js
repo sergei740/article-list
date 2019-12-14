@@ -4,13 +4,10 @@ export function loadData(title) {
   const xhr = new XMLHttpRequest();
 
   return new Promise(function (resolve, reject) {
-
     // Setup our listener to process compeleted requests
     xhr.onreadystatechange = function () {
-
       // Only run if the request is complete
       if (xhr.readyState !== 4) return;
-
       // Process the response
       if (xhr.status >= 200 && xhr.status < 300) {
         // If successful
@@ -22,7 +19,6 @@ export function loadData(title) {
           statusText: xhr.statusText
         });
       }
-
     };
 
     xhr.open("GET", `https://movie-database-imdb-alternative.p.rapidapi.com/?page=1&r=json&s=${ title }`);

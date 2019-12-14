@@ -23,13 +23,13 @@
 
 .block_poster_list {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .error_text {
     width: 50%;
+    margin: 0 auto;
     text-align: center;
     font-weight: bold;
     font-size: 24px;

@@ -2,10 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="52b7976d-1aac-4d0c-9186-eed4194e807b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/ArticleList/style.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PopupStartGame/PopupStartGame.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/PopupStartGame/style.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Game/Game.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Game/Game.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupForGame/PopupForGame.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupForGameScore/PopupForGameScore.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/PopupForGame/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopupForGameScore/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieList/MovieList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieList/MovieList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MovieList/style.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MovieList/style.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/getTransformStr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/httpService.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/httpService.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,6 +26,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="ProjectConfigurationFiles">
     <option name="files">
@@ -154,7 +163,13 @@
       <workItem from="1570540716204" duration="217000" />
       <workItem from="1570541248270" duration="3133000" />
       <workItem from="1570549376678" duration="10024000" />
-      <workItem from="1570715296620" duration="8795000" />
+      <workItem from="1570715296620" duration="10012000" />
+      <workItem from="1571933084605" duration="3198000" />
+      <workItem from="1573772538921" duration="5000" />
+      <workItem from="1574080006510" duration="4000" />
+      <workItem from="1575999051238" duration="1571000" />
+      <workItem from="1576251131479" duration="7515000" />
+      <workItem from="1576342075591" duration="3146000" />
     </task>
     <task id="LOCAL-00001" summary="updated yarn.lock">
       <created>1570551055303</created>
@@ -170,7 +185,21 @@
       <option name="project" value="LOCAL" />
       <updated>1570566645544</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added PopupStartGame component">
+      <created>1570725286594</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570725286594</updated>
+    </task>
+    <task id="LOCAL-00004" summary="changed updateHeaderText function, fixed reload on click show movies button in Movies component">
+      <created>1576344203851</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576344203851</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -201,6 +230,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="updated yarn.lock" />
     <MESSAGE value="added style.module.css and key prop to AricleList" />
-    <option name="LAST_COMMIT_MESSAGE" value="added style.module.css and key prop to AricleList" />
+    <MESSAGE value="added PopupStartGame component" />
+    <MESSAGE value="changed updateHeaderText function, fixed reload on click show movies button in Movies component" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed updateHeaderText function, fixed reload on click show movies button in Movies component" />
   </component>
 </project>
